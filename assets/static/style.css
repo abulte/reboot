@@ -44,3 +44,83 @@ hr {
   border-top: 0;
   margin: 2em 0;
 }
+
+.side-content {
+  margin-left: 3em;
+  flex: 0 0 25%;
+  font-size: 15px;
+}
+
+.side-content .form__group + .form__group {
+  margin-top: 1em;
+}
+
+.side-content dt {
+  display: block;
+  color: #53657d;
+}
+
+.side-content dd {
+  padding: 0;
+}
+
+/* Tabs */
+.section-tabbed {
+  background-color: #003b80;
+  margin: auto;
+
+}
+
+.tabs {
+}
+
+.tabs input[type="radio"] {
+  display:none ;
+}
+
+.tabs label {
+  color: #fff;
+  padding: 1em 2em;
+  text-decoration: none;
+  border-radius: 0;
+  cursor:pointer;
+  margin: 0;
+  display: inline-block;
+  transform: translateX(-100%);
+}
+
+.tabs label:hover {
+  background: #ccc;
+  color: #1c1c1c;
+}
+
+.tabs label:first-of-type {
+  margin-left: 50%;
+}
+
+.tabs input:checked + label{
+  background-color: #ebeff3;
+  color: #26353f;
+  cursor: default;
+}
+
+.tabs .tab {
+  display: none;
+  padding-top: 3em;
+}
+
+.tab .container {
+  flex-direction: column;
+}
+
+.tab-content {
+  background-color: #ebeff3;
+  padding-bottom: 5em;
+}
+
+.tabs input:nth-of-type(1):checked ~ .tab-content .tab:nth-of-type(1),
+.tabs input:nth-of-type(2):checked ~ .tab-content .tab:nth-of-type(2),
+.tabs input:nth-of-type(3):checked ~ .tab-content .tab:nth-of-type(3){ 
+  display: block;
+}
+
